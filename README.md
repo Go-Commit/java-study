@@ -1,12 +1,21 @@
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=Go%20Commit&fontSize=85)
+![header](https://capsule-render.vercel.app/api?type=wave&color=3766AB&height=300&section=header&text=Go%20Commit&fontSize=85&fontColor=ffffff)
+<div align="center">
+  
+<h1 align="center"><b>✨ Go Commit ✨</b></h1>
 
-# Go Commit
 #### _커밋하기 위해 공부하는 4인 스터디_
-- Language : [![java](https://img.shields.io/badge/java-3766AB?style=flat-square&logo=java&logoColor=white)](github.com/Joowon0220/TODO-List) &nbsp;
+### Language <br>
+  
+[![java](https://img.shields.io/badge/java-blue?style=flat-square&logo=java&logoColor=white)](github.com/Joowon0220/TODO-List) &nbsp; <br>
+  
+### Time <br>
+![Badge](https://img.shields.io/badge/Sat-blue.svg?style(flat)) . ![Badge](https://img.shields.io/badge/11-blue.svg?style(flat)) . ![Badge](https://img.shields.io/badge/am-blue.svg?style(flat))<br>
+  
+### Place <br>
+ ![Badge](https://img.shields.io/badge/합정-blue.svg?style(flat))<br>
+</div>
 
-- Time : Sat 11 am.
-- Place : 합정
-
+<br>
 <br>
 
 ## 📌Notice
