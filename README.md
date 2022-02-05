@@ -4,12 +4,12 @@
 # Go Commit
 ##### _커밋하기 위해 공부하는 4인 스터디_
 - Language : [![java](https://img.shields.io/badge/java-F7DF1E?style=flat-square&logo=java&logoColor=black)](github.com/Joowon0220/TODO-List)
-- Time : sat 11 am
+- Time : Sat 11 am.
 - Place : 합정
 
 
 
-## Notice
+## 📌Notice
 - 회비는 한달에 한번 (1만원)
 - 회비는 책 구매 및 스캔 비용으로 사용 
 - 톡캘린더에 참석 여부 기재 (매주 금요일까지)
@@ -17,7 +17,7 @@
 
 
 
-## Penalty
+## 🚨Penalty
 - 맡은 파트 정리 파일 미개시시 회비 5천원
 - 사전 통지 없이 불참시 회비 5천원 (웨인테크놀로지 당일 단축근무 사유 기준)
 - 30분 이상 지각시 회비 5천원
@@ -26,7 +26,7 @@
 
 
 
-## Study
+## ✏️Study
 | MEMBER | CHAPER | LINK |
 | ------ | ------ | ------ |
 | 소현 | 5. 참조타입 | [plugins/dropbox/README.md][PlDb] |
