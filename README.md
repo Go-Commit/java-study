@@ -3,7 +3,7 @@
 
 # Go Commit
 ##### _커밋하기 위해 공부하는 4인 스터디_
-- Language : [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)](github.com/Joowon0220/TODO-List)
+- Language : [![java](https://img.shields.io/badge/java-F7DF1E?style=flat-square&logo=java&logoColor=black)](github.com/Joowon0220/TODO-List)
 - Time : sat 11 am
 - Place : 합정
 
