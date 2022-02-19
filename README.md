@@ -41,4 +41,4 @@
 | 소현 | 5. 참조타입 | [plugins/dropbox/README.md][PlDb] |
 | 호연 | 6. 클래스 | [plugins/github/README.md][PlGh] |
 | 보경 | 7. 상속 | [plugins/googledrive/README.md][PlGd] |
-| 아란 | 8. 인터페이스 | [plugins/onedrive/README.md][PlOd] |
+| 아란 | 8. 인터페이스 | \[인터페이스]: (https://github.com/Go-Commit/java-study/tree/master/aran/interface.md)  |
