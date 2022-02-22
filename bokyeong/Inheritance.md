@@ -1,0 +1,2 @@
+
+# 상속 (Inheritiance)
