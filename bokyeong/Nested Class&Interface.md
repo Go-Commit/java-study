@@ -72,6 +72,7 @@ public class Button {
     }
 }
 ```
+<br>
 
 ## 5. 익명 객체
 익명(anonymous) 객체
