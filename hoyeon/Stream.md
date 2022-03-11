@@ -16,12 +16,12 @@ stream.forEach( name -> System.out.println(name));
 * 중간 처리와 최종 처리를 할 수 있다.
 
 ## 스트림의 종류
-![streamType](./hoyeon/StreamType.png)
+![streamType](StreamType.png)
 
 ## 스트림 파이프라인
 
 #### 중간 처리 메소드와 최종 처리 메소드
-![stream2](./hoyeon/streamMidFinalMethod.png)
+![stream2](streamMidFinalMethod.png)
 
 ## 병렬처리
 * 하나의 작업을 분할해서 각각의 코어가 병렬적 처리
