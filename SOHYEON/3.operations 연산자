@@ -1,0 +1,169 @@
+
+--------------------------
+
+--------------------------
+package com.park.javatest;
+
+public class TI_java_part1 {
+
+	public static void main(String[] args)  {
+		boolean play = true;
+		System.out.println(play);
+		
+		play = !play;
+		System.out.println(play);
+	}
+}
+--------------------------
+Nan
+--------------------------
+
+package com.park.javatest;
+
+public class TI_java_part1 {
+	public static void main(String[] args) {
+		String userInput = "NaN";
+		double val = Double.valueOf(userInput);
+		//System.out.println( val);
+		
+		double currentBalance = 10000.0;
+		
+		currentBalance += val;
+		System.out.println(currentBalance);
+		
+	}
+}
+
+--------------------------
+
+--------------------------
+package com.park.javatest;
+
+public class TI_java_part1 {
+	public static void main(String[] args) {
+		
+		String str1 = "ABC" + 123;
+		String str2 = "ABC" + str1;
+		System.out.println(str2);
+		
+		String str3 ="JDK" +3 +3.0;
+		String str4 = 3 +3.0 + "jdk";
+		System.out.println(str3);
+		System.out.println(str4);
+		
+		
+		
+	}
+}
+
+
+--------------------------
+확인문제2 / 31      
+--------------------------
+public class TI_java_part1 {
+	public static void main(String[] args) {
+	
+	int x = 10;
+	int y = 20;
+	int z = (++x) + (y--);
+	System.out.println(z);
+		
+		
+	}
+}
+
+--------------------------
+확인3 / 가
+--------------------------
+	public static void main(String[] args) {
+	
+	int score = 85;
+	String result = (!(score>90))? "가":"나";
+	System.out.println(result);
+		
+	}
+
+
+-------------------------
+확인4/ 17 24
+-------------------------
+
+public class TI_java_part1 {
+	public static void main(String[] args) {
+	
+	int pen = 534;
+	int std = 30;
+	
+	int pen_std = (pen / std);
+	System.out.println(pen_std);
+	
+	int pen_left = (pen % std);
+	System.out.println(pen_left);
+	
+	}
+}
+--------------------------
+확인 5
+--------------------------
+
+public class TI_java_part1 {
+	public static void main(String[] args) {
+	
+	int val = 356;
+	System.out.println((val == 356) ? "300" : false);
+	
+	}
+}
+
+
+--------------------------
+확인 6
+--------------------------
+public class TI_java_part1 {
+	public static void main(String[] args) {
+		
+		int lengthTop = 5;
+		int lengthBottom = 10;
+		int height = 7;
+		double area = ((lengthTop + lengthBottom) * height);
+		System.out.println(area);
+		
+	}
+}
+
+
+--------------------------
+확인 7
+--------------------------
+	public static void main(String[] args) {
+	
+	int x = 10;
+	int y = 5;
+	
+	System.out.println("(" +((x>7) && (y<=5) )+")" );
+	System.out.println( "(" +((x%3 == 2) || (y%2 != 1))+")" );
+	
+	}
+--------------------------
+확인 8 NaN을 검사하라는게 무슨말이지....???
+--------------------------
+
+
+	public static void main(String[] args) {
+	
+	double x = 5.0;
+	double y = 0.0;
+	
+	double z = x % y;
+	
+	if (z == NaN) {
+		System.out.println("0.0 으로 나눌 수  없습니다.");
+	} else {
+		double result = z+10;
+		System.out.println("결과" +result);
+	}
+
+	
+	}
+
+
