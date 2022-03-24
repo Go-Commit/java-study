@@ -15,7 +15,6 @@ public class Excercise03 {
         System.out.println("3의 배수의 합 : " + sum);
     }
 }
-// --> 3의 배수의 합 : 1683
 ```
 
 ```JAVA
@@ -49,8 +48,6 @@ public class Excercise05 {
         }
     }
 }
-// --> (5, 8)
-// --> (10, 4)
 ```
 
 ```JAVA
