@@ -82,22 +82,22 @@ public class OracleDao implements DataAccessObject {
 public class MySqlDao implements DataAccessObject { 
 	@Override 
 	public void select() { 
-		System.out.println("MySqlDao에서 검색"); 
+		System.out.println("MySql DB에서 검색"); 
 	} 
 	
 	@Override 
 	public void insert() { 
-		System.out.println("MySqlDao에서 삽입"); 
+		System.out.println("MySql DB에 삽입"); 
 	} 
 	
 	@Override 
 	public void update() { 
-		System.out.println("MySqlDao에서 수정"); 
+		System.out.println("MySql DB를 수정"); 
 	} 
 	
 	@Override 
 	public void delete() { 
-		System.out.println("MySqlDao에서 삭제"); 
+		System.out.println("MySql DB에서 삭제"); 
 	} 
 }
 ```
@@ -115,7 +115,8 @@ public class ActionExample {
 			public void work() { 
 				System.out.println("복사를 합니다."); 
 			} 
-		}; 
+		}
+
 		action.work(); 
 	} 
 }
