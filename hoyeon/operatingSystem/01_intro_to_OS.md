@@ -71,7 +71,7 @@
   * PalmOS, Pocket PC(WinCE), Tiny OS
  
  #### 운영체제의 구조
- 
+ ![Alt text](../운영체제_구조.png)
  
 
 
