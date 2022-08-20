@@ -1,0 +1,69 @@
+2. 컴퓨터 하드웨어
+
+System Structure & Program Execution 1
+
+컴퓨터 시스템 구조, Mode bit, Timer, Device Controller, 입출력(I/O)의 수행, 동기식 입출력과 비동기식 입출력, 시스템콜(System Call), 인터럽트(Interrupt)
+컴퓨터 시스템 구조, 인터럽트(Interrupt), 동기식 입출력과 비동기식 입출력, 시스템콜(System Call), DMA(Direct Memory Access), 서로 다른 입출력 명령어, 저장장치 계층 구조, 프로그램의 실행(메모리 load), 커널 주소 공간의 내용, 사용자 프로그램이 사용하는 함수, 프로그램의 실행
+ 
+Interrupt 
+CPU가 해당 program counter가 가리키는 곳을 처리하다가 인터럽트가 들어오면( I/O device에서 input 정보가 ) CPU제어권이 OS(운영체제)로 넘어감 인터럽트를 처리
+인터럽트 벡터 : 인터럽트 처리주소
+system call : 프로그램이 오류를 범한 경우
+exception : 프로그램이 커널 함수를 호출하는 경우
+mode bit
+ - 한정 된 프로그램을 수행할 수 있게 도움 (보안을 위한 것)
+사용자프로그램에 넘겨줄 때 1 
+0일 때는 os메모리의 아무거나 수행
+1 : 사용자 프로그램이 cpu를 가지고 있을 때 / 자기 메모리 영역만보고 일을 함
+0: 운영체제만 io device를 작업
+운영체제한테 요청을 해야함 > mode bit 이 0일 때만 가능 > 사용자가 운영체제에게 io device를 통한 요청 : 시스템 콜 system call
+ 
+memory
+CPU의 instruction을 실행함
+dma controller 
+ - memory를 cpu랑 dma 도 접근이 가능 /원래는 cpu만가능함 cpu의 interrupt 대신해서 dma controller가 memory에 input 정보를 대신 입력해주어서 -> cpu의  잦은 사용을 줄여줌 
+ 
+프로그램 실행-> 제한권을 timer를 걸어서 cpu-> os로 제한권을 넘겨줌
+ 
+device controller 
+ - i/o장치 유형을 관리하는 일종의 작은 cpu
+ - 각 장치를 통제하는 일종의 작은 cpu
+ 
+timer
+-  특정프로그램 이 cpu를 독점하는 것을 막기위한 시간을 걸어서 interrupt를 발생시키게함
+ - 정해진 시간이(할당하여) 흐른 뒤 운영체제에게 제어권이 넘어가도록 인터럽트를 발생시킴
+ 
+ 
+ 
+동기식 입출력
+ 
+동기식 입출력 ( synchronous I/O )
+io 요청 후 입출력 작업이 완료 된 후에야 , 제어가 사용자 프로그램에 넘어감
+io가 끝날 때 까지 cpu를 낭비시킴
+매시점 하나의 io만 일어날 수 있음
+io가 완료될 때까지 해당 프로그램에게서 cpu를 빼앗음
+비동기식 입출력 (asynchronous I/O) io 입출력이 완료되지 않아도 사용자→커널에, 기다리지 않고 cpu제어권을 얻어서 다른 작업을 수행
+두 작업의 완료의 경우에는 interrupt로 알려줌
+ 
+/DMA 메모리에 접근할 수 있는 장치 ( Direct Memory Access )
+빠른 입출력 장치를 메모리에 가까운 속도로 처리하기 위해 사용
+/저장장치 계층구조
+위로갈수록 : 속도가 빠른매체 , 용량이 적음
+위 : 휘발성 매체 / cpu 가 실행가능 , byte단위 접근 : cpu
+아래 : 비휘발성 매체 / secter/or? 단위 접근임 , cpu실행불가
+/ 프로그램의 실행 ( 컴터에서 어떻게 실행이 되는가!
+File System ⇒ Virtual Memory ⇒ Physical memory ( / Swap Memory (휘발성))
+실행 → 메모리 주소공간이 생김 Address Space → Address translation → Physical Memory(Kernel Space)
+(Kernel Space)커널영역 주소공간의 내용
+code : 시스템콜 , 인터럽트 처리코드 , 자원관리코드,
+data : cpu, memory , disk / P C B
+stack : 커널스택(사용자 프로그램마다 프로세스를 따로 가짐)
+사용자프로그램이 사용하는 함수
+사용자 정의 함수
+자신의 프로그램에서 정의한 함수
+라이브러리 함수 ⇒ Process A,,B,,C,,
+자신의 프로그램에서 정의하지않고 가져다 쓴 함수
+자신의 프로그램의 실행파일에 포함되어 있다
+커널함수 ⇒ kernel _Address Space
+운영체제 프로그램의 함수
+커널함수의 호출 = 시스템콜
