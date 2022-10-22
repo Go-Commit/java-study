@@ -79,10 +79,30 @@ class Solution {
 
 9.정수 num1과 num2가 매개변수로 주어질 때, num1을 num2로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요.
 ```
+class Solution {
+    public int solution(int num1, int num2) {
+        double ans = (double)num1/num2;
+        ans*=1000;
+        return (int)ans;
+    }
+}
 ```
 
 10.정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.
 ```
+class Solution {
+    public double solution(int[] numbers) {
+        double num = 0;
+        int j =0;
+        for(int i=0; i< numbers.length; i++)
+        {
+            num +=numbers[i];
+            j++;
+        }        
+        num/=j;
+        return num;
+    }
+}
 ```
 
 
