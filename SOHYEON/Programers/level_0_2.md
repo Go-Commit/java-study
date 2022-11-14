@@ -157,9 +157,21 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120833
 ```
 
 
-.
+10. 문자열뒤집기
 
-
+https://school.programmers.co.kr/learn/courses/30/lessons/120822
 ```
-
+    public String solution(String my_string) {
+        char[] arr = new char[my_string.length()];
+        for (int i = 0; i < my_string.length(); i++) {
+            arr[i] = my_string.charAt(i);
+        }
+        char[] ans = new char[arr.length];        
+        for (int i = my_string.length() - 1, j = 0; i >= 0; i--, j++) {
+            ans[i] = arr[j];
+            System.out.print(arr[j]);
+        }
+        return ans;
+         // ans;
+    }
 ```
