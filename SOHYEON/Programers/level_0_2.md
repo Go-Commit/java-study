@@ -107,33 +107,71 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120821
 ```
 
 
-.
+7.직각삼각형 출력하기
+https://school.programmers.co.kr/learn/courses/30/lessons/120823
+
+```
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+```
 
 
+8.문자 반복 출력하기
+https://school.programmers.co.kr/learn/courses/30/lessons/120825
+
+```
+public String solution(String my_string, int n) {
+        String ans="";
+        int su = my_string.length();
+        String[] arr = new String[su];
+        arr = my_string.split("");
+        for (int i = 0; i < su; i++) {
+            for (int j = n; j <= n - 1; j++) {
+                // System.out.print(arr[i]);
+                ans =arr[i];
+            }          
+        }
+        return ans;
+    }
+
+```
+
+
+9.배열 자르기
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120833
 ```
 
 ```
 
 
-.
+10. 문자열뒤집기
 
-
+https://school.programmers.co.kr/learn/courses/30/lessons/120822
 ```
-
-```
-
-
-.
-
-
-```
-
-```
-
-
-.
-
-
-```
-
+    public String solution(String my_string) {
+        char[] arr = new char[my_string.length()];
+        for (int i = 0; i < my_string.length(); i++) {
+            arr[i] = my_string.charAt(i);
+        }
+        char[] ans = new char[arr.length];        
+        for (int i = my_string.length() - 1, j = 0; i >= 0; i--, j++) {
+            ans[i] = arr[j];
+            System.out.print(arr[j]);
+        }
+        return ans;
+         // ans;
+    }
 ```
