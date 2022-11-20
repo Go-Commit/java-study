@@ -1,5 +1,5 @@
-### 프로그래머스###
-# level_0 #
+# 프로그래머스
+#### level_0 
 
 1.특정 문자 제거하기
 https://school.programmers.co.kr/learn/courses/30/lessons/120826
@@ -45,14 +45,36 @@ class Solution {
 }
 ```
 
-4.
+4.배열 자르기
+https://school.programmers.co.kr/learn/courses/30/lessons/120833
 
 ```
+import java.util.Arrays;
+
+class Solution {
+    public int[] solution(int[] numbers, int num1, int num2) {
+        int[] answer = {};
+        answer = Arrays.copyOfRange(numbers, num1, num2+1);
+        return answer;
+    }
+}
 ```
 
-5.
-
+5.외계행성의 나이
+https://school.programmers.co.kr/learn/courses/30/lessons/120834
 ```
+import java.util.stream.Stream;
+class Solution {
+    public String solution(int age) {
+        String answer = "";
+        String arr[] = {"a","b","c","d","e","f","g","h","i","j"};
+        int[] agenum = Stream.of(String.valueOf(age).split("")).mapToInt(Integer::parseInt).toArray();
+        for (int i = 0; i < agenum.length; i++) {
+            answer+=arr[agenum[i]];
+        }
+        return answer;
+    }
+}
 ```
 
 6.
