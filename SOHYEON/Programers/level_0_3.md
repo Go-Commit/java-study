@@ -77,19 +77,76 @@ class Solution {
 }
 ```
 
-6.
+6.개미 군단
+https://school.programmers.co.kr/learn/courses/30/lessons/120837
+```
+class Solution {
+    public int solution(int hp) {
+        int answer = 0;
+        while (hp >= 0) {
+
+            if (hp >= 5) {
+                hp -= 5;
+                answer++;
+            } else if (hp >= 3) {
+                hp -= 3;
+                answer++;
+            } else if (hp >= 1) {
+                hp -= 1;
+                answer++;
+            } else if (hp == 0) {
+                break;
+            }
+        }
+        
+        return answer;
+    }
+}
+```
+
+7.모스부호 (1)
+https://school.programmers.co.kr/learn/courses/30/lessons/120838
 
 ```
+import java.util.HashMap;
+class Solution {
+    public String solution(String letter) {
+        String answer = "";
+        HashMap <String, String> map = new HashMap<>();
+        map.put(".-","a");
+        map.put("-...", "b"); map.put("-.-.","c");map.put("-..","d");
+        map.put(".","e");map.put("..-.","f");map.put("--.","g");
+        map.put("....","h");map.put("..","i");map.put(".---","j");map.put("-.-","k");
+        map.put(".-..","l");map.put("--","m");
+        map.put("-.","n");map.put("---","o");map.put(".--.","p");
+        map.put("--.-","q");map.put(".-.","r");
+        map.put("...","s");map.put("-","t");map.put("..-","u");map.put("...-","v");
+        map.put(".--","w");
+        map.put("-..-","x");map.put("-.--","y");map.put("--..","z");
+
+        String[] letterArr = letter.split(" ");
+        for (String arr : letterArr) {
+            answer += map.get(arr);
+        }
+        return answer;
+    }
+}
 ```
 
-7.
-
+8. 가위바위보
+https://school.programmers.co.kr/learn/courses/30/lessons/120839
 ```
-```
-
-8.
-
-```
+class Solution {
+    public String solution(String rsp) {
+        String answer = "";
+        for (int i = 0; i < rsp.length(); i++) {
+            if (rsp.charAt(i) == '5') answer += '2'; 
+            else if (rsp.charAt(i) == '2') answer += '0';
+            else if (rsp.charAt(i) == '0') answer += '5';
+        }    
+        return answer;
+    }
+}
 ```
 
 9.
